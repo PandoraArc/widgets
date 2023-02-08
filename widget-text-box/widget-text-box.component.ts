@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-widget-text-box',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./widget-text-box.component.scss']
 })
 export class WidgetTextBoxComponent {
-
+  
+  @Input() placeholder: string = ""
 }
